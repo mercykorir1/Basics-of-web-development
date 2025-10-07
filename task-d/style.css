@@ -1,0 +1,71 @@
+/*
+Author: Mercy korir
+Date: 2025-10-07
+*/
+
+/* Element selectors */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 40px;
+  background-color: #f5f7fa;
+  color: #333;
+}
+
+h1, h2, h3 {
+  color: #003366;
+  text-align: center;
+}
+
+/* ID selector */
+#special-message {
+  background-color: #e6f7ff;
+  border-left: 4px solid #3399ff;
+  padding: 10px;
+  margin: 20px 0;
+  font-style: italic;
+}
+
+/* Class selectors */
+.box {
+  border: 1px solid #ccc;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.highlight {
+  background-color: #fff8e1;
+}
+
+.secondary {
+  background-color: #e8f5e9;
+}
+
+/* Group selector */
+h1, h2, h3 {
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Descendant selector */
+section ul li {
+  list-style-type: square;
+  margin-left: 20px;
+}
+
+/* Attribute selectors */
+a[target="_blank"] {
+  color: #0066cc;
+  text-decoration: underline;
+}
+
+a[target="_blank"]:hover {
+  color: #003366;
+}
+
+img[alt] {
+  border: 2px solid #ccc;
+  border-radius: 6px;
+  display: block;
+  margin: 10px auto;
+}
