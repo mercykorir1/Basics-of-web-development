@@ -1,0 +1,106 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Registration Page</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="index.js" defer></script>
+</head>
+
+<body>
+  <!--
+    Author: mercy korir
+    Date: 2025-11-06
+  -->
+
+  <header class="site-header">
+    <h1>Registration page</h1>
+  </header>
+
+  <main class="content">
+    <!-- Top row split into two blocks -->
+    <div class="top-grid">
+      <!-- Student info (30%) -->
+      <section class="student-info" aria-label="Student information">
+        <h2 class="Registration">Students' Registration Form</h2>
+        <p><span class="course-name">Algorithm course</span></p>
+        <p><span class="student-group">A128SP</span></p>
+      </section>
+
+      <!-- Controls (70%): add course + day marks -->
+      <section class="controls" aria-label="Register">
+        <h2 class="controls-title">Register</h2>
+
+       <form id="registerForm">
+    <!-- Hidden timestamp -->
+    <input type="hidden" id="timestamp" name="timestamp">
+
+        <!-- Full name -->
+    <div class="form-row">
+      <label for="fullName">Full Name</label>
+      <input type="text" id="fullName" name="fullName" placeholder="e.g., John Doe">
+      <span class="error" id="fullNameError"></span>
+    </div>
+
+    <!-- Email -->
+    <div class="form-row">
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" placeholder="e.g., john@example.com">
+      <span class="error" id="emailError"></span>
+    </div>
+
+    <!-- Phone -->
+    <div class="form-row">
+      <label for="phone">Phone</label>
+      <input type="tel" id="phone" name="phone" placeholder="+358 123 4567">
+      <span class="error" id="phoneError"></span>
+    </div>
+
+    <!-- Birth date -->
+    <div class="form-row">
+      <label for="birthDate">Birth Date</label>
+      <input type="date" id="birthDate" name="birthDate">
+      <span class="error" id="birthDateError"></span>
+    </div>
+
+    <!-- Terms -->
+    <div class="form-row">
+      <label>
+        <input type="checkbox" id="terms" name="terms">
+        I accept the terms
+      </label>
+      <span class="error" id="termsError"></span>
+    </div>
+
+
+         <div class="form-row">
+      <button type="submit" class="btn">Submit</button>
+      <button type="reset" class="btn btn-secondary">Clear</button>
+    </div>
+        </form>
+      </section>
+    </div>
+
+    <!-- Table -->
+    <div class="table-wrap">
+      <table class="table" id="timetable">
+        <thead>
+          <tr>
+            <th>Timestamp</th>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Phone Number</th>
+            <th>D.O.B</th>
+          </tr>
+        </thead>
+        <tbody>
+        </tbody>
+      </table>
+    </div>
+  </main>
+
+</body>
+
+</html>
