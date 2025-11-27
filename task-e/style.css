@@ -121,15 +121,11 @@ body {
 }
 .table thead th:nth-child(n+2),
 .table tbody td:nth-child(n+2) {
-  width: 12%;
+  width: 10%;
   text-align: center; 
 }
 
-/* Center the day columns (Monâ€“Thu) */
-.table thead th:nth-child(n+2),
-.table tbody td:nth-child(n+2) {
-  text-align: center;
-}
+
 /* ≤ 768px: margins 5%, show only student-info + table */
 @media (max-width: 768px) {
   .content { margin-left: 5%; margin-right: 5%; }
